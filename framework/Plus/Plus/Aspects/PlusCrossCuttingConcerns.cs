@@ -6,8 +6,6 @@ namespace Plus.Aspects
 {
     public static class PlusCrossCuttingConcerns
     {
-        //TODO: Move these constants to their own assemblies!
-
         public const string Auditing = "PlusAuditing";
         public const string UnitOfWork = "PlusUnitOfWork";
         public const string FeatureChecking = "PlusFeatureChecking";

@@ -1,4 +1,6 @@
-﻿using Autofac.Core;
+﻿using Autofac;
+using Autofac.Builder;
+using Autofac.Core;
 using Autofac.Extras.DynamicProxy;
 using Plus.Castle.DynamicProxy;
 using Plus.DependencyInjection;
@@ -7,7 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Autofac.Builder
+namespace Plus.Autofac.Builder
 {
     public static class PlusRegistrationBuilderExtensions
     {

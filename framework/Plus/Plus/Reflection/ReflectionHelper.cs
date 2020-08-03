@@ -5,10 +5,8 @@ using System.Reflection;
 
 namespace Plus.Reflection
 {
-    //TODO: Consider to make internal
     public static class ReflectionHelper
     {
-        //TODO: Ehhance summary
         /// <summary>
         /// Checks whether <paramref name="givenType"/> implements/inherits <paramref name="genericType"/>.
         /// </summary>

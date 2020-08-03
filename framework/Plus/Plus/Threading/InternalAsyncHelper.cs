@@ -5,8 +5,6 @@ using System.Threading.Tasks;
 
 namespace Plus.Threading
 {
-    //TODO: Rename since it's not internal anymore!
-    //TODO: Cache GetMethod reflection!
     public static class InternalAsyncHelper
     {
         public static async Task AwaitTaskWithFinally(Task actualReturnValue, Action<Exception> finalAction)

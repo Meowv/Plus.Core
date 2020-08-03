@@ -14,10 +14,6 @@ using System.Threading.Tasks;
 
 namespace Plus.EventBus.RabbitMq
 {
-    /* TODO: How to handle unsubscribe to unbind on RabbitMq (may not be possible for)
-     * TODO: Implement Retry system
-     * TODO: Should be improved
-     */
     [Dependency(ReplaceServices = true)]
     [ExposeServices(typeof(IDistributedEventBus), typeof(RabbitMqDistributedEventBus))]
     public class RabbitMqDistributedEventBus : EventBusBase, IDistributedEventBus, ISingletonDependency
@@ -27,7 +23,6 @@ namespace Plus.EventBus.RabbitMq
         protected IConnectionPool ConnectionPool { get; }
         protected IRabbitMqSerializer Serializer { get; }
 
-        //TODO: Accessing to the List<IEventHandlerFactory> may not be thread-safe!
         protected ConcurrentDictionary<Type, List<IEventHandlerFactory>> HandlerFactories { get; }
         protected ConcurrentDictionary<string, Type> EventTypes { get; }
         protected IRabbitMqMessageConsumerFactory MessageConsumerFactory { get; }

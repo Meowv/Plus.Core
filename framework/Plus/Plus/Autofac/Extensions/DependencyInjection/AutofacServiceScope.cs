@@ -23,10 +23,11 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 // OTHER DEALINGS IN THE SOFTWARE.
 
+using Autofac;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace Autofac.Extensions.DependencyInjection
+namespace Plus.Autofac.Extensions.DependencyInjection
 {
     /// <summary>
     /// Autofac implementation of the ASP.NET Core <see cref="IServiceScope"/>.

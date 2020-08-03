@@ -23,13 +23,15 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 // OTHER DEALINGS IN THE SOFTWARE.
 
+using Autofac;
 using Autofac.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using Plus.Autofac.Builder;
 using Plus.Modularity;
 using System;
 using System.Reflection;
 
-namespace Autofac.Extensions.DependencyInjection
+namespace Plus.Autofac.Extensions.DependencyInjection
 {
     /// <summary>
     /// Extension methods for registering ASP.NET Core dependencies with Autofac.

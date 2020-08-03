@@ -23,14 +23,14 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 // OTHER DEALINGS IN THE SOFTWARE.
 
+using Autofac;
 using JetBrains.Annotations;
 using Microsoft.Extensions.DependencyInjection;
-using Plus;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Autofac.Extensions.DependencyInjection
+namespace Plus.Autofac.Extensions.DependencyInjection
 {
     /// <summary>
     /// Extension methods on <see cref="IServiceCollection"/> to register the <see cref="IServiceProviderFactory{TContainerBuilder}"/>.

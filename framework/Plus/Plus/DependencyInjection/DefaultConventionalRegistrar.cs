@@ -8,7 +8,6 @@ using System.Reflection;
 
 namespace Plus.DependencyInjection
 {
-    //TODO: Make DefaultConventionalRegistrar extensible, so we can only define GetLifeTimeOrNull to contribute to the convention. This can be more performant!
     public class DefaultConventionalRegistrar : ConventionalRegistrarBase
     {
         public override void AddType(IServiceCollection services, Type type)

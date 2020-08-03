@@ -1,6 +1,6 @@
 ﻿using Autofac;
-using Autofac.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
+using Plus.Autofac.Extensions.DependencyInjection;
 using System;
 
 namespace Plus.Autofac

@@ -56,10 +56,8 @@ namespace Plus.IO
         /// <returns>A string containing all lines of the file.</returns>
         public static async Task<string> ReadAllTextAsync(string path)
         {
-            using (var reader = File.OpenText(path))
-            {
-                return await reader.ReadToEndAsync();
-            }
+            using var reader = File.OpenText(path);
+            return await reader.ReadToEndAsync();
         }
 
         /// <summary>

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace Plus.Options
 {
-    //TODO: Derive from OptionsFactory when this is released: https://github.com/aspnet/Options/pull/258 (or completely remove this!)
     public class PlusOptionsFactory<TOptions> : IOptionsFactory<TOptions> where TOptions : class, new()
     {
         private readonly IEnumerable<IConfigureOptions<TOptions>> _setups;
