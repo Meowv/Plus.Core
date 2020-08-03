@@ -7,12 +7,13 @@ using Plus.EventBus;
 using Plus.EventBus.Local;
 using Plus.Modularity;
 using System;
+using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             using var application = PlusApplicationFactory.Create<StatisicsModule>(options =>
             {
@@ -47,14 +48,14 @@ namespace ConsoleApp1
             var eventBus = application.ServiceProvider.GetRequiredService<ILocalEventBus>();
 
             eventBus.Subscribe<TestEventData>(
-               async eventData =>
-               {
-                   Console.WriteLine(eventData.Value + 10);
-               });
+                async eventData =>
+                {
+                    Console.WriteLine(eventData.Value + 10);
+                });
 
             Console.WriteLine("...............");
 
-            eventBus.PublishAsync(new TestEventData(1));
+            await eventBus.PublishAsync(new TestEventData(1));
         }
     }
 

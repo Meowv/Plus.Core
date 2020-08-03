@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plus", "framework\Plus\Plus.csproj", "{7A9524F4-8A72-4B5D-98D1-5B26E351EA78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plus.Core", "Plus.Core\Plus.Core.csproj", "{7A9524F4-8A72-4B5D-98D1-5B26E351EA78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{88FBAD85-7278-4565-8A53-588A18BB2F10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{88FBAD85-7278-4565-8A53-588A18BB2F10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
