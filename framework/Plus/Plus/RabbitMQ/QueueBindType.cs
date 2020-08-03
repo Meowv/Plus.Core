@@ -1,0 +1,4 @@
+﻿namespace Plus.RabbitMQ
+{
+
+}
