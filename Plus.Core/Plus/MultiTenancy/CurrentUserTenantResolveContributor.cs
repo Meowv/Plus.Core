@@ -1,4 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
+using Plus.Users;
 
 namespace Plus.MultiTenancy
 {
