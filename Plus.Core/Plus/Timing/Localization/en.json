@@ -1,0 +1,7 @@
+{
+  "culture": "en",
+  "texts": {
+    "DisplayName:Plus.Timing.Timezone": "Timezone",
+    "Description:Plus.Timing.Timezone": "Application time zone"
+  }
+}
