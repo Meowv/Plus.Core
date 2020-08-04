@@ -6,16 +6,16 @@
     <PackageId>Plus.Core</PackageId>
     <Authors>阿星Plus</Authors>
     <Company>https://meowv.com</Company>
-    <Description>.NET Core 开发工具包</Description>
+    <Description>Plus.Core 是一个基于 .NET Standard 的 C# 开发库，集成各种优秀框架到一个包内，方便开发使用。</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Copyright>https://meowv.com</Copyright>
     <PackageProjectUrl>https://meowv.com</PackageProjectUrl>
     <PackageIconUrl>https://avatars2.githubusercontent.com/u/13010050</PackageIconUrl>
     <RepositoryUrl>https://meowv.com</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>plus</PackageTags>
-    <PackageReleaseNotes>NET Core 开发工具包</PackageReleaseNotes>
-    <Version>0.1.0</Version>
+    <PackageTags>plus;plus.core;</PackageTags>
+    <PackageReleaseNotes>.NET Core 开发工具包</PackageReleaseNotes>
+    <Version>0.2.0</Version>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1' ">
