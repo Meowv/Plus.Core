@@ -50,9 +50,9 @@
   
   <ItemGroup>
     <Content Remove="Plus\Localization\Resources\**\*.json" />
-    <Content Remove="Plus\Application\Localization\Resources\AbpDdd\*.json" />
+    <Content Remove="Plus\Application\Localization\Resources\PlusDdd\*.json" />
     <EmbeddedResource Include="Plus\Localization\Resources\**\*.json" />
-    <EmbeddedResource Include="Plus\Application\Localization\Resources\AbpDdd\*.json" />
+    <EmbeddedResource Include="Plus\Application\Localization\Resources\PlusDdd\*.json" />
   </ItemGroup>
 
 </Project>
