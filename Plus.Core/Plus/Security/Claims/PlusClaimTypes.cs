@@ -2,9 +2,9 @@
 
 namespace Plus.Security.Claims
 {
-    //TODO: Instead of directly using static properties, can we just create an AbpClaimOptions and pass these values as defaults?
+    //TODO: Instead of directly using static properties, can we just create an PlusClaimOptions and pass these values as defaults?
     /// <summary>
-    /// Used to get ABP-specific claim type names.
+    /// Used to get Plus-specific claim type names.
     /// </summary>
     public static class PlusClaimTypes
     {
