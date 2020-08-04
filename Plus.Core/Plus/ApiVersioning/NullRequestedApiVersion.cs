@@ -8,7 +8,7 @@
 
         private NullRequestedApiVersion()
         {
-            
+
         }
     }
 }
