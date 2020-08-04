@@ -17,7 +17,7 @@ namespace Plus.Caching.StackExchangeRedis
 
             for (var i = 0; i < keys.Length; i++)
             {
-                tasks[i] = cache.HashGetAsync((RedisKey)keys[i], fields);
+                tasks[i] = cache.HashGetAsync(keys[i], fields);
             }
 
             for (var i = 0; i < tasks.Length; i++)
@@ -38,7 +38,7 @@ namespace Plus.Caching.StackExchangeRedis
 
             for (var i = 0; i < keys.Length; i++)
             {
-                tasks[i] = cache.HashGetAsync((RedisKey)keys[i], fields);
+                tasks[i] = cache.HashGetAsync(keys[i], fields);
             }
 
             return await Task.WhenAll(tasks);
