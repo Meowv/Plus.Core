@@ -67,12 +67,11 @@ namespace Plus.IO
         /// <returns>A string containing all lines of the file.</returns>
         public static async Task<byte[]> ReadAllBytesAsync(string path)
         {
-            using (var stream = File.Open(path, FileMode.Open))
-            {
-                var result = new byte[stream.Length];
-                await stream.ReadAsync(result, 0, (int)stream.Length);
-                return result;
-            }
+            using var stream = File.Open(path, FileMode.Open);
+
+            var result = new byte[stream.Length];
+            await stream.ReadAsync(result, 0, (int)stream.Length);
+            return result;
         }
 
         /// <summary>
@@ -109,13 +108,12 @@ namespace Plus.IO
                 bufferSize,
                 fileOptions))
             {
-                using (var reader = new StreamReader(stream, encoding))
+                using var reader = new StreamReader(stream, encoding);
+
+                string line;
+                while ((line = await reader.ReadLineAsync()) != null)
                 {
-                    string line;
-                    while ((line = await reader.ReadLineAsync()) != null)
-                    {
-                        lines.Add(line);
-                    }
+                    lines.Add(line);
                 }
             }
 

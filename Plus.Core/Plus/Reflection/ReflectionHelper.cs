@@ -193,7 +193,7 @@ namespace Plus.Reflection
 
             var publicConstants = new List<string>();
 
-            void Recursively(List<string> constants, Type targetType, int currentDepth)
+            static void Recursively(List<string> constants, Type targetType, int currentDepth)
             {
                 if (currentDepth > maxRecursiveParameterValidationDepth)
                 {

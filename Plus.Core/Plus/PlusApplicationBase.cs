@@ -48,12 +48,11 @@ namespace Plus
 
         public virtual void Shutdown()
         {
-            using (var scope = ServiceProvider.CreateScope())
-            {
-                scope.ServiceProvider
-                    .GetRequiredService<IModuleManager>()
-                    .ShutdownModules(new ApplicationShutdownContext(scope.ServiceProvider));
-            }
+            using var scope = ServiceProvider.CreateScope();
+
+            scope.ServiceProvider
+                .GetRequiredService<IModuleManager>()
+                .ShutdownModules(new ApplicationShutdownContext(scope.ServiceProvider));
         }
 
         public virtual void Dispose()
