@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace Microsoft.AspNetCore.Builder
 {
-    public static class ApplicationBuilderAbpJwtTokenMiddlewareExtension
+    public static class ApplicationBuilderPlusJwtTokenMiddlewareExtension
     {
         public static IApplicationBuilder UseJwtTokenMiddleware(this IApplicationBuilder app, string schema = JwtBearerDefaults.AuthenticationScheme)
         {
