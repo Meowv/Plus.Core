@@ -1,7 +1,7 @@
-﻿using System;
-using System.Security.Cryptography;
-using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.Options;
 using Plus.DependencyInjection;
+using System;
+using System.Security.Cryptography;
 
 namespace Plus.Guids
 {
