@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authentication;
+﻿#if NETCOREAPP3_1
+
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace Microsoft.AspNetCore.Builder
@@ -23,3 +25,5 @@ namespace Microsoft.AspNetCore.Builder
         }
     }
 }
+
+#endif
