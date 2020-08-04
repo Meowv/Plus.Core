@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Plus.Modularity;
+using Plus.ObjectExtending;
 using Plus.Uow;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Collections.Generic;
 namespace Plus.Data
 {
     [DependsOn(
-        //typeof(PlusObjectExtendingModule),
+        typeof(PlusObjectExtendingModule),
         typeof(PlusUnitOfWorkModule)
     )]
     public class PlusDataModule : PlusModule
