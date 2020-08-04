@@ -1,0 +1,7 @@
+{
+  "culture": "de",
+  "texts": {
+    "DisplayName:Plus.Localization.DefaultLanguage": "Standardsprache",
+    "Description:Plus.Localization.DefaultLanguage": "Die Standardsprache der Anwendung."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "culture": "ru",
+  "texts": {
+    "DisplayName:Plus.Localization.DefaultLanguage": "Язык по умолчанию",
+    "Description:Plus.Localization.DefaultLanguage": "Язык приложения по умолчанию."
+  }
+}

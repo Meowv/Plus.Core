@@ -1,0 +1,7 @@
+{
+  "culture": "en",
+  "texts": {
+    "DisplayName:Plus.Localization.DefaultLanguage": "Default language",
+    "Description:Plus.Localization.DefaultLanguage": "The default language of the application."
+  }
+}

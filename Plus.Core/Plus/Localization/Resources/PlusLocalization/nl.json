@@ -1,0 +1,7 @@
+{
+  "culture": "nl",
+  "texts": {
+    "DisplayName:Plus.Localization.DefaultLanguage": "Standaard taal",
+    "Description:Plus.Localization.DefaultLanguage": "De standaardtaal van de applicatie."
+  }
+}
