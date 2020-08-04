@@ -1,8 +1,8 @@
-﻿using System;
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using Microsoft.Extensions.DependencyInjection;
 using Plus.DependencyInjection;
 using Plus.Serialization.Binary;
+using System;
 
 namespace Plus.Serialization
 {
@@ -63,7 +63,7 @@ namespace Plus.Serialization
 
         protected virtual T AutoDeserialize<T>(byte[] bytes)
         {
-            return (T) BinarySerializationHelper.DeserializeExtended(bytes);
+            return (T)BinarySerializationHelper.DeserializeExtended(bytes);
         }
     }
 }
