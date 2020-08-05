@@ -1,0 +1,10 @@
+﻿@using Plus.AspNetCore.Mvc.UI.Components.LayoutHook
+@inject LayoutHookViewModel model
+
+@if (model.Hooks.Any())
+{
+    foreach (var hook in model.Hooks)
+    {
+        <text>@await Component.InvokeAsync(hook.ComponentType, new { layout = model.Layout })</text>
+    }
+}

@@ -1,7 +1,5 @@
 ﻿#if NETCOREAPP3_1
 
-using System;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Caching.Distributed;
 using Plus.AspNetCore.Mvc.MultiTenancy;
@@ -10,6 +8,8 @@ using Plus.DependencyInjection;
 using Plus.Http.Client.DynamicProxying;
 using Plus.MultiTenancy;
 using Plus.Threading;
+using System;
+using System.Threading.Tasks;
 
 namespace Plus.AspNetCore.Mvc.Client
 {
@@ -122,7 +122,7 @@ namespace Plus.AspNetCore.Mvc.Client
             {
                 return tenantConfiguration;
             }
-            
+
             tenantConfiguration = Cache.GetOrAdd(
                 cacheKey,
                 () => AsyncHelper.RunSync(async () => CreateTenantConfiguration(await Proxy.Service.FindTenantByIdAsync(id))),
