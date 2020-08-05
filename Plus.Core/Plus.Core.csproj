@@ -69,14 +69,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Content Remove="Plus\Localization\Resources\**\*.json" />
-    <Content Remove="Plus\Timing\Localization\**\*.json" />
-    <None Remove="Plus\Application\Localization\Resources\PlusDdd\*.json" />
-    <None Remove="Plus\Validation\Localization\*.json" />
-    <EmbeddedResource Include="Plus\Localization\Resources\**\*.json" />
-    <EmbeddedResource Include="Plus\Timing\Localization\**\*.json" />
-    <EmbeddedResource Include="Plus\Application\Localization\Resources\PlusDdd\*.json" />
-    <EmbeddedResource Include="Plus\Validation\Localization\*.json" />
+    <EmbeddedResource Include="Plus\**\*.json" />
   </ItemGroup>
 
 </Project>
