@@ -9,17 +9,24 @@
     <Description>Plus.Core 是一个基于 .NET Standard 的 C# 开发库，集成各种优秀框架到一个包内，方便开发使用。</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Copyright>https://meowv.com</Copyright>
-    <PackageProjectUrl>https://meowv.com</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Meowv/Plus.Core</PackageProjectUrl>
     <PackageIconUrl>https://avatars2.githubusercontent.com/u/13010050</PackageIconUrl>
-    <RepositoryUrl>https://meowv.com</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Meowv/Plus.Core</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>plus;plus.core;</PackageTags>
     <PackageReleaseNotes>.NET Core 开发工具包</PackageReleaseNotes>
-    <Version>0.2.0</Version>
+    <Version>0.3.0</Version>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Include="Plus\**\*.json" />
+  </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1' ">
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -66,22 +73,6 @@
     <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
     <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
     <PackageReference Include="TimeZoneConverter" Version="3.2.0" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <EmbeddedResource Include="Plus\**\*.json" />
-  </ItemGroup>
-  
-  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson">
-      <Version>3.1.6</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation">
-      <Version>3.1.6</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning">
-      <Version>4.1.1</Version>
-    </PackageReference>
   </ItemGroup>
 
 </Project>
